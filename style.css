@@ -1,0 +1,394 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+
+.mdescuro {
+  transition: all 500ms;
+  position: absolute;
+  left: 1vh;
+  top: 1vh;
+  width: 3vw;
+  cursor: pointer;
+  user-select: none;
+}
+.mdescuro:hover{
+  transform: scale(1.2);
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  align-items: flex-end;
+  margin: 0;
+  display: flex;
+  overflow-x: hidden;
+  flex-direction: column;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #4a90e2;
+  border-radius: 0.4vw;
+}
+
+body::-webkit-scrollbar {
+  width: 0.4vw;
+}
+
+body::-webkit-scrollbar-track {
+  background-color: #f5f5f5;
+}
+
+body::-webkit-scrollbar-button {
+  display: none;
+}
+
+.page1 {
+  display: flex;
+  flex-direction: row;
+}
+
+.nome {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  width: 55vw;
+  background: #f5f5f5;
+  flex-direction: column;
+  color: #4a90e2;
+}
+
+h1 {
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 2vw;
+  font-size: 7vw;
+}
+
+h4 {
+  font-size: 2vw;
+  margin-left: 2vw;
+}
+
+h5{
+  font-size: 1.5vw ;
+ font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+
+
+
+.foto {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #4a90e2;
+  height: 100vh;
+  width: 45vw;
+}
+.foto:hover .moldura {
+  rotate: 0deg;
+}
+
+.limita {
+  color: #4a90e2;
+  width: 40vw;
+}
+
+.ftperfil {
+  width: 30vw;
+  z-index: 1000;
+  border-radius: 3vh;
+  cursor: url("./Assets/heart.png"), auto;
+}
+
+.moldura {
+  border: solid 1vh #f5f5f5;
+  border-radius: 3vh;
+  position: absolute;
+  width: 30vw;
+  height: 30vw;
+  z-index: 1;
+  rotate: 10deg;
+  transition: all 0.5s;
+}
+.m2 {
+  rotate: 20deg;
+}
+
+.m3 {
+  rotate: 30deg;
+}
+
+.m4 {
+  rotate: 40deg;
+}
+
+.m5 {
+  rotate: 50deg;
+}
+
+.m6 {
+  rotate: 60deg;
+}
+
+.m7 {
+  rotate: 70deg;
+}
+
+.m8 {
+  rotate: 80deg;
+}
+
+.projetos {
+  position: absolute;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw; /* 55 */
+  background: #f5f5f5;
+  flex-direction: column;
+  color: #4a90e2;
+  transition: all 2s;
+}
+
+.imgs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: #4a90e2;
+  height: 100vh;
+  width: 45vw;
+  color: #f5f5f5;
+}
+
+h2 {
+  font-size: 4vw;
+  margin-left: 2vw;
+}
+
+.prj {
+  position: absolute;
+  top: 93vh;
+  left: 0;
+}
+
+.btn {
+  margin-top: 2vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  width: 10vw;
+  height: 5vh;
+  border-radius: 1vw;
+  background: #4a90e2;
+  font-size: 1.6vw;
+  color: #f5f5f5;
+
+  transition: all 300ms;
+}
+
+a {
+  width: 10vw;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: #3669a2;
+  transform: scale(1.1);
+}
+
+.sftbk {
+  color: #f5f5f5;
+}
+
+.redes {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 100vw;
+  height: 20vh;
+  background-color: #4a90e2;
+}
+
+.icn {
+  height: 12vh;
+  transition: all 300ms;
+}
+
+.icn:hover {
+  height: 14vh;
+}
+
+@media screen and (max-width: 448px) {
+  body {
+    font-family: "Inter", sans-serif;
+    margin: 0;
+    display: flex;
+    overflow-x: hidden;
+    flex-direction: column;
+  }
+
+  .mdescuro {
+    width: 4vh;
+  }
+
+  .page1 {
+    display: flex;
+    flex-direction: column; /* Para telas menores, a direção pode ser coluna */
+    align-items: center; /* Centralizar os itens */
+    justify-content: center;
+    width: 100vw;
+    height: auto; /* Certifique-se de que a altura é ajustada corretamente */
+  }
+
+  .nome {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 55vh;
+    width: 100vw;
+    background: #f5f5f5;
+    flex-direction: column;
+    color: #4a90e2;
+  }
+
+  h1 {
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 12vw;
+    font-size: 6vh;
+  }
+
+  h4 {
+    font-size: 2.5vh;
+    margin-left: 2vw;
+  }
+
+  .foto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #4a90e2;
+    height: 45vh;
+    width: 100vw;
+  }
+
+  .limita {
+    color: #4a90e2;
+    width: 80vw;
+  }
+
+  .ftperfil {
+    width: 65vw;
+    z-index: 1000;
+    border-radius: 3vh;
+  }
+
+  .moldura {
+    border: solid #f5f5f5 1vw;
+    border-radius: 3vh;
+    position: absolute;
+    width: 60vw;
+    height: 60vw;
+    z-index: 1;
+
+    rotate: 10deg;
+  }
+
+  .m2 {
+    rotate: 20deg;
+  }
+
+  .m3 {
+    rotate: 30deg;
+  }
+
+  .m4 {
+    rotate: 40deg;
+  }
+
+  .m5 {
+    rotate: 50deg;
+  }
+
+  .m6 {
+    rotate: 60deg;
+  }
+
+  .m7 {
+    rotate: 70deg;
+  }
+
+  .m8 {
+    rotate: 80deg;
+  }
+
+  .projetos {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 45vh;
+    width: 100vw; /* 55 */
+    background: #f5f5f5;
+    flex-direction: column;
+    color: #4a90e2;
+    transition: all 2s;
+  }
+
+  .imgs {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #4a90e2;
+    height: 55vh;
+    width: 100vw;
+    color: #f5f5f5;
+  }
+
+  h2 {
+    font-size: 4vh;
+  }
+
+  .btn {
+    margin-top: 2vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    width: 18vw;
+    height: 3vh;
+    border-radius: 1vw;
+    background: #4a90e2;
+    font-size: 2vh;
+    color: #f5f5f5;
+    padding: 0.5vh;
+    transition: all 300ms;
+  }
+
+  .redes {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100vw;
+    height: 7vh;
+    background-color: #3669a2;
+  }
+
+  .icn {
+    height: 5vh;
+    transition: all 300ms;
+  }
+}
